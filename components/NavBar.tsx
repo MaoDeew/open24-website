@@ -7,7 +7,7 @@ import { Logo } from "./Logo";
 interface NavBarProps {
   title: string;
   subtitle: string;
-  deviceType : 'desktop' | 'mobile';
+  deviceType: "desktop" | "mobile";
 }
 
 export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
@@ -18,20 +18,32 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
     setShowMenuItemsMobile(!showMenuItemsMobile);
   };
 
-  const isMobile = deviceType === 'mobile';
-
+  const isMobile = deviceType === "mobile";
 
   return (
     <>
       <nav className="bg-white border-black px-2 sm:px-4 py-2.5">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           {isMobile ? (
-            <Logo width={200} height={85} isMobile={true} additionalClassName="flex justify-center" />
+            <Link href="/">
+              <Logo
+                width={200}
+                height={85}
+                isMobile={true}
+                additionalClassName="flex justify-center"
+              />
+            </Link>
           ) : (
-            <Logo width={180} height={85} isMobile={false}/>
+            <Link href="/">
+              <Logo width={180} height={85} isMobile={false} />
+            </Link>
           )}
           <p
-            style={{ marginBottom: 0, fontWeight: "bold", fontSize:  isMobile ? 19 : 29 }}
+            style={{
+              marginBottom: 0,
+              fontWeight: "bold",
+              fontSize: isMobile ? 19 : 29,
+            }}
             className="md:flex text-sm md:text-xl md:py-5"
           >
             {subtitle}

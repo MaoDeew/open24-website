@@ -6,19 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface AuxProps {
   children: ReactChild | ReactChildren;
-  deviceType : 'desktop' | 'mobile';
+  deviceType: "desktop" | "mobile";
 }
-
 
 import {
   faFacebook,
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export const Layout = ({ children, deviceType }: AuxProps) => {
-
-  const isMobile = deviceType === 'mobile';
+  const isMobile = deviceType === "mobile";
   return (
     <>
       <Head>
@@ -30,7 +29,11 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
         />
       </Head>
       <div className="flex flex-col">
-        <NavBar title="Open 24" subtitle="Café, Snacks, Bebidas y mucho más" deviceType={deviceType} />
+        <NavBar
+          title="Open 24"
+          subtitle="Café, Snacks, Bebidas y mucho más"
+          deviceType={deviceType}
+        />
         <div>
           <div className="bg-gray-100 p-10">
             <div className="container mx-auto h-full">{children}</div>
@@ -38,19 +41,24 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
         </div>
         <footer className="p-4 bg-zinc-500 rounded-lg shadow">
           <div className="flex container justify-between">
-            <a href="/" className="flex items-center mb-4 sm:mb-0" style={{marginTop: -33}}>
-              <Logo
-                additionalClassName="mr-3 h-8"
-                width={500}
-                height={250}
-                isMobile={isMobile}
-              />
-            </a>
+            <Link href="/">
+              <div
+                className="flex items-center mb-4 sm:mb-0"
+                style={{ marginTop: -33 }}
+              >
+                <Logo
+                  additionalClassName="mr-3 h-8"
+                  width={500}
+                  height={250}
+                  isMobile={isMobile}
+                />
+              </div>
+            </Link>
             <ul className="flex items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
                 <a
                   href="https://www.facebook.com/Open24maquinasdispensadoras/"
-                  target='_blank'
+                  target="_blank"
                   rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6"
                 >
@@ -60,7 +68,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
               <li>
                 <a
                   href="https://www.instagram.com/open24vending/"
-                  target='_blank'
+                  target="_blank"
                   rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6"
                 >
@@ -70,7 +78,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
               <li>
                 <a
                   href="https://twitter.com/open24vending1"
-                  target='_blank'
+                  target="_blank"
                   rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
                 >

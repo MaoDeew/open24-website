@@ -57,8 +57,9 @@ export default function LocationsList() {
 
   return (
     <div className="flex flex-col justify-between">
-      {locations.map(({ name, image, address, locationWazeURL,locationGoogleMapsURL }) => (
+      {locations.map(({ name, image, address, locationWazeURL,locationGoogleMapsURL },index) => (
         <Location
+          key={name+" - "+address+" - "+index}
           title={name}
           address={address}
           image={image}

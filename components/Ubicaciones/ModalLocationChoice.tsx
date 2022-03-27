@@ -18,12 +18,12 @@ function ModalLocationChoice(props: any) {
         <p>¿Con cual sitio web quieres abrir la ubicación?</p>
       </Modal.Body>
       <Modal.Footer>
-        <a href={props.locationGoogleMapsURL} target="_blank">
+        <a href={props.locationGoogleMapsURL} target="_blank" rel="noreferrer">
           <Button variant="danger" onClick={props.onHide}>
             Google Maps
           </Button>
         </a>
-        <a href={props.locationWazeURL} target="_blank">
+        <a href={props.locationWazeURL} target="_blank" rel="noreferrer">
           <Button variant="danger" onClick={props.onHide}>
             Waze
           </Button>

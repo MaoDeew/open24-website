@@ -51,6 +51,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
                 <a
                   href="https://www.facebook.com/Open24maquinasdispensadoras/"
                   target='_blank'
+                  rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6"
                 >
                   <FontAwesomeIcon icon={faFacebook} />
@@ -60,6 +61,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
                 <a
                   href="https://www.instagram.com/open24vending/"
                   target='_blank'
+                  rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6"
                 >
                   <FontAwesomeIcon icon={faInstagram} />
@@ -69,6 +71,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
                 <a
                   href="https://twitter.com/open24vending1"
                   target='_blank'
+                  rel="noreferrer"
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
                 >
                   <FontAwesomeIcon icon={faTwitter} />

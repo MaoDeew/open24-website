@@ -23,10 +23,6 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
       <Head>
         <title>Open24</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <script
-          src="https://kit.fontawesome.com/93cb9f4943.js"
-          crossOrigin="anonymous"
-        />
       </Head>
       <div className="flex flex-col">
         <NavBar

@@ -90,12 +90,11 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{" "}
-            <a
-              href="/"
-              className="no-underline text-white sm:text-center hover:underline"
-            >
-              Open24™
-            </a>
+            <Link href="">
+              <span className="no-underline text-white sm:text-center hover:underline">
+                Open24™
+              </span>
+            </Link>
             . Todos los derechos reservados
           </span>
         </footer>

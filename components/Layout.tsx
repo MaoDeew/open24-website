@@ -37,7 +37,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
         </div>
         <footer className="p-4 bg-zinc-500 rounded-lg shadow">
           <div className="flex container justify-between">
-            <Link href="/">
+            <Link href="/" passHref>
               <div
                 className="flex items-center mb-4 sm:mb-0"
                 style={{ marginTop: -33 }}
@@ -86,7 +86,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{" "}
-            <Link href="">
+            <Link href="" passHref>
               <span className="no-underline text-white sm:text-center hover:underline">
                 Open24™
               </span>

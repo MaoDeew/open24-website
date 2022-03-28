@@ -11,7 +11,7 @@ interface LogoProps {
 export const Logo = ({additionalClassName, width, height, isMobile}: LogoProps) => {
   return (
     <div className={"self-center "+additionalClassName} style={{ width: isMobile ? "100%" : "35%" }}>
-      <Image src={logo} width={width+" px"} height={height+" px"} />
+      <Image className="cursor-pointer" src={logo} width={width+" px"} height={height+" px"} alt='open24-logo'/>
     </div>
   );
 };

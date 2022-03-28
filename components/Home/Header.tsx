@@ -14,7 +14,7 @@ export const Header = ({ title, deviceType }: HeaderProps) => {
       <div style={{flex: 2, marginBottom: isMobile ? 15 : 0}}>
         <span style={{fontWeight: 'bold'}} className="text-2xl w-36 md:w-full md:text-4xl">{title}</span>
       </div>
-      <div style={{flex: 1}}>
+      <div >
         {typeof window !== undefined ? (
           <Clock
             format={"h:mm:ssa"}

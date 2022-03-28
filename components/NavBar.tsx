@@ -91,9 +91,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
                 <Link href="/" passHref>
                   <span
                     className={
-                      "block py-2 pr-4 pl-3 text-xl cursor-pointer " +
-                      (router.pathname === "/" ? "text-red-500" : "")
-                    }
+                      "block py-2 pr-4 pl-3 text-xl cursor-pointer text-red-500"}
                     style={{ fontWeight: "bold" }}
                     aria-current="page"
                   >
@@ -105,8 +103,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
                 <span
                   onClick={() => window.location.replace("/#ubicaciones")}
                   className={
-                    "block py-2 pr-4 pl-3 text-xl cursor-pointer " +
-                    (router.pathname === "/ubicaciones" ? "text-red-500" : "")
+                    "block py-2 pr-4 pl-3 text-xl cursor-pointer text-red-500"
                   }
                   style={{ fontWeight: "bold" }}
                 >

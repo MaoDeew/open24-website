@@ -27,7 +27,7 @@ const [modalShow, setModalShow] = useState(false);
       <Card.Header style={{fontWeight: 'bold', fontSize: 25}}>{title}</Card.Header>
       <Card.Body>
         <Card.Title style={{fontWeight: 'bold', fontSize: 16}}>
-          <span className="font-normal">Dirección: </span> {address}
+          {address}
         </Card.Title>
         <div className="flex flex-col md:flex-row">
           <div>
@@ -42,7 +42,7 @@ const [modalShow, setModalShow] = useState(false);
           <div className="md:ml-3">
             <p style={{ fontWeight: "bold" }}>
               <span style={{ fontWeight: "normal" }}>Horario: </span>Abierto las
-              24 horas.
+              24 horas
             </p>
             <Button variant="danger" className="w-52" onClick={() => setModalShow(true)}>
               Abrir Ubicación

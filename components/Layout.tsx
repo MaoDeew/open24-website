@@ -13,6 +13,7 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -27,7 +28,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
       <div className="flex flex-col">
         <NavBar
           title="Open 24"
-          subtitle="Café, Snacks, Bebidas y mucho más"
+          subtitle="Café, Snacks, Bebidas y mucho más..."
           deviceType={deviceType}
         />
         <div>
@@ -51,6 +52,16 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
               </div>
             </Link>
             <ul className="flex items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=3102503692&text&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
+                >
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.facebook.com/Open24maquinasdispensadoras/"

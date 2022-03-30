@@ -18,7 +18,7 @@ export const Header = ({ title, deviceType }: HeaderProps) => {
         {typeof window !== undefined ? (
           <Clock
             format={"h:mm:ssa"}
-            className="text-4xl md:w-full md:text-4xl text-red-500"
+            className="text-4xl md:w-full md:text-4xl text-red-500 font-bold"
             ticking={true}
           />
         ) : null}

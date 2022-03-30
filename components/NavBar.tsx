@@ -42,7 +42,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
             style={{
               marginBottom: 0,
               fontWeight: "bold",
-              fontSize: isMobile ? 15 : 29,
+              fontSize: isMobile ? 18.5 : 40,
             }}
             className="md:flex text-sm md:text-xl md:py-5"
           >
@@ -56,7 +56,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
             <span className="sr-only">Open main menu</span>
             <svg
               className="w-6 h-6"
-              fill="currentColor"
+              fill="red"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -107,7 +107,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
                   }
                   style={{ fontWeight: "bold" }}
                 >
-                  Nuestros Puntos
+                  Nuestras Tiendas
                 </span>
               </li>
             </ul>

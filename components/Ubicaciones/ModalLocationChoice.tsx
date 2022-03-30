@@ -17,7 +17,7 @@ function ModalLocationChoice(props: any) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-            ¿Como quieres ir tu punto elegido?
+            ¿Cómo quieres ir tu tienda automática elegida?
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>

@@ -14,6 +14,7 @@ import {
   faTwitter,
   faInstagram,
   faWhatsapp,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -48,6 +49,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
                   width={500}
                   height={250}
                   isMobile={isMobile}
+                  inFooter
                 />
               </div>
             </Link>
@@ -90,6 +92,16 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
                   className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
                 >
                   <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC1F8wQmDyI-SHu7g18WSXtg"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
                 </a>
               </li>
             </ul>

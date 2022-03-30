@@ -2,8 +2,8 @@ import React from "react";
 import Location from "./Location";
 
 
-import imageLocation1 from "../../assets/ubicaciones/EDS Petrobras - Centro Comecial El Manantial.jpg";
-import imageLocation2 from "../../assets/ubicaciones/EDS Petromil B -183.jpg";
+import imageLocation1 from "../../assets/ubicaciones/EDS Petrobras - Centro Comecial El Manantial.png";
+import imageLocation2 from "../../assets/ubicaciones/EDS Petromil B -183.png";
 import imageLocation3 from "../../assets/ubicaciones/EDS Petromil Bazar - 64.jpeg";
 import imageLocation4 from "../../assets/ubicaciones/EDS Petromil Bazar - 65.jpeg";
 import imageLocation5 from "../../assets/ubicaciones/EDS Petromil Bazar -134.jpeg";

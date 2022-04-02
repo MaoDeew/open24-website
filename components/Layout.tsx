@@ -25,8 +25,10 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
       <Head>
         <title>Open24</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:url" content="	https://www.open24vending.com.co/" key="url" />
         <meta property="og:title" content="Open24 - Café, Snacks, Bebidas y mucho más..." key="title" />
-        <meta property="og:image" content="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f8adc8c8.png&w=384&q=75" key="logo" />
+        <meta property="og:description" content="Somos tiendas automáticas abiertas todos los días 24 horas" key="description" />
+        <meta property="og:image" content="https://www.open24vending.com.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f8adc8c8.png&w=384&q=75" key="logo" />
       </Head>
       <div className="flex flex-col" style={{}}>
         <NavBar

@@ -9,3 +9,7 @@
 .carousel-control-next-icon{
     background-color: black;
 }
+
+.carousel-indicators button{
+    background-color: black !important;
+}

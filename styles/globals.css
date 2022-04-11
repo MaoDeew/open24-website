@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    overflow-x: hidden;
+}
+
 .carousel-control-prev-icon{
     background-color: black;
 }
@@ -12,4 +16,29 @@
 
 .carousel-indicators button{
     background-color: black !important;
+}
+
+.brands-animation{
+    display: flex;
+    /*background-color: red;*/
+    /*width: calc(100% + 500px);*/
+    /*width: 200%;*/
+    /*position: absolute;*/
+    width: 350%;
+    position: revert;
+    animation: linear infinite alternate;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 65s;
+}
+
+@-webkit-keyframes run {
+    0% {
+      left: 0;
+      transform: translateX(0);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(-100%);
+    }
 }

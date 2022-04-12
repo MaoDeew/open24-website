@@ -19,7 +19,6 @@ import imagePepsico from "../../assets/brands/pepsico.png";
 import imageHindu from "../../assets/brands/hindu.png";
 import imageNestle from "../../assets/brands/nestle.png";
 import imageOma from "../../assets/brands/oma.png";
-import imageJuanValdez from "../../assets/brands/juanValdez.png";
 import imageMayaguez from "../../assets/brands/mayaguez.png";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
@@ -109,10 +108,6 @@ export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
     {
       name: "Oma",
       image: imageOma,
-    },
-    {
-      name: "Juan Valdez",
-      image: imageJuanValdez,
     },
     {
       name: "Mayagüez",

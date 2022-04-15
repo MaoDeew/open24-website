@@ -15,8 +15,11 @@ html{
 }
 
 .carousel-indicators button{
-
     background-color: black !important;
+}
+
+.carousel-indicators{
+    display: none !important;
 }
 
 .brands-animation{

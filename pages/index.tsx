@@ -13,7 +13,7 @@ const Home: NextPage = ({deviceType}: any) => {
   return (
     <Layout deviceType={deviceType}>
       <div>
-        <Header title="Somos tiendas automáticas abiertas todos los días 24 horas" deviceType={deviceType}/>
+        <Header title="Somos tiendas automáticas abiertas todos los días 24 horas en Bogotá" deviceType={deviceType}/>
         <div className="py-5">
           
         <CarouselWrapper />

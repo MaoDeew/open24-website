@@ -26,7 +26,7 @@ const [modalShow, setModalShow] = useState(false);
     <Card style={{ marginBottom: 30 }}>
       <Card.Header style={{fontWeight: 'bold', fontSize: 18}}>{title}</Card.Header>
       <Card.Body>
-        <Card.Title style={{fontWeight: 'bold', fontSize: 16}}>
+        <Card.Title style={{fontWeight: 'bold', fontSize: 16}} className='flex flex-col'>
           {address}
         </Card.Title>
         <div className="flex flex-col md:flex-row">

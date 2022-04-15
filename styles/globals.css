@@ -7,14 +7,15 @@ html{
 }
 
 .carousel-control-prev-icon{
-    background-color: black;
+    display: none !important;
 }
 
 .carousel-control-next-icon{
-    background-color: black;
+    display: none !important;
 }
 
 .carousel-indicators button{
+
     background-color: black !important;
 }
 

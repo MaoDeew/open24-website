@@ -24,7 +24,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 
 interface BrandsProps {
   additionalClassName?: string;
-  deviceType?: 'desktop' | 'mobile'
+  deviceType?: "desktop" | "mobile";
 }
 
 export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
@@ -56,6 +56,10 @@ export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
     {
       name: "Tosh",
       image: imageTosh,
+    },
+    {
+      name: "Oma",
+      image: imageOma,
     },
     {
       name: "Cifrut",
@@ -106,46 +110,62 @@ export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
       image: imageNestle,
     },
     {
-      name: "Oma",
-      image: imageOma,
-    },
-    {
       name: "Mayagüez",
       image: imageMayaguez,
     },
-    
   ];
 
-  const {width, height} = useWindowSize();
-
-  const calculationWidthBrandsAnimation = ()  => {
-
-    if(width >= 800 && width < 1300 ){
-      return width * 3.5
-    }
-
-    if(width < 800){
-      return width * 12.5
-    }
-
-    return width*2
-  }
+  const { width, height } = useWindowSize();
   
-  return (
+  const calculationWidthBrandsAnimation = () => {
+    if (width >= 800 && width < 1300) {
+      return width * 2.5;
+    }
 
-    <div className="h-36" style={{marginTop: -35}}>
-      {/*<span className="w-full text-red-500 text-3xl font-bold flex justify-center" style={{marginBottom: 10}}>
-            NUESTROS MARCAS
-  </span>*/}
+    if (width < 800) {
+      return width * 12.5;
+    }
+
+    return width * 2;
+  };
+
+  return (
+    <div className="h-36" style={{ marginTop: -35/*, marginBottom: 45*/ }}>
+      <span
+        className="w-full text-red-500 text-3xl font-bold flex"
+        style={{ marginBottom: 10 }}
+      >
+        PROVEEDORES
+      </span>
       <div className="container overflow-x-hidden">
-      <div className="brands-animation" style={{width: calculationWidthBrandsAnimation()}} /*style={{width : 'calc('+(calculationWidthBrandsAnimation)+'rem - '+width+'px)'}}*/>
-        {listBrands.map(({name,image}) => (
-          <div key={name+"-"+image} className="w-56 flex justify-center p-2 bg-white mx-2 rounded-md" /*style={{flex : 1}}*/>
-            <Image layout="fixed" width="280px" height="105px" src={image} alt={name} />
-          </div>
-        ))}
-      </div>
-      
+        <div
+          className="brands-animation"
+          style={{
+            width: calculationWidthBrandsAnimation(),
+          }} /*style={{width : 'calc('+(calculationWidthBrandsAnimation)+'rem - '+width+'px)'}}*/
+        >
+          {listBrands.map(({ name, image }) => (
+            <div
+              key={name + "-" + image}
+              className="w-56 flex justify-center p-2 bg-white mx-2 rounded-md" /*style={{flex : 1}}*/
+            >
+              {/*<Image
+                layout="fixed"
+                width="280px"
+                height="105px"
+                src={image}
+                alt={name}
+          />*/}
+              <Image
+                layout="fixed"
+                width="100px"
+                height="55px"
+                src={image}
+                alt={name}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const Home: NextPage = ({deviceType}: any) => {
     <Layout deviceType={deviceType}>
       <div>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-226123823-1"
+        src="https://www.googletagmanager.com/gtag/js?id=G-9PMZ0J4M7Q"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -23,7 +23,7 @@ const Home: NextPage = ({deviceType}: any) => {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'UA-226123823-1');
+          gtag('config', 'G-9PMZ0J4M7Q');
         `}
       </Script>
       <Head>

@@ -1,18 +1,33 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Layout } from "../components/Layout";
 import { Header } from "../components/Home/Header"
 import { CarouselWrapper } from "../components/Home/CarouselWrapper";
 import LocationsList from "../components/Ubicaciones/LocationsList";
 import { GetServerSideProps } from 'next'
 import { Brands } from "../components/Brands/Brands";
+import Script from "next/script";
 
 const Home: NextPage = ({deviceType}: any) => {
 
   return (
     <Layout deviceType={deviceType}>
       <div>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-226123823-1"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-226123823-1');
+        `}
+      </Script>
+      <Head>
+      </Head>
         <Header title="Somos tiendas automáticas en Bogotá, abiertas todos los días 24 horas" deviceType={deviceType}/>
         <div className="py-5">
           

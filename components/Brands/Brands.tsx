@@ -8,7 +8,6 @@ import imageRamo from "../../assets/brands/ramo.png";
 import imageTosh from "../../assets/brands/tosh.png";
 import imageCifrut from "../../assets/brands/cifrut.jpeg";
 import imageCorona from "../../assets/brands/corona.png";
-import imageCafeQuindio from "../../assets/brands/cafeQuindio.png";
 import imageNatyPastel from "../../assets/brands/natyPastel.png";
 import imageSuperRicas from "../../assets/brands/superRicas.png";
 import imageGrupoNutresa from "../../assets/brands/grupoNutresa.png";
@@ -18,7 +17,6 @@ import imageMonteArroyo from "../../assets/brands/monteArroyo.png";
 import imagePepsico from "../../assets/brands/pepsico.png";
 import imageHindu from "../../assets/brands/hindu.png";
 import imageNestle from "../../assets/brands/nestle.png";
-import imageOma from "../../assets/brands/oma.png";
 import imageMayaguez from "../../assets/brands/mayaguez.png";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
@@ -58,20 +56,12 @@ export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
       image: imageTosh,
     },
     {
-      name: "Oma",
-      image: imageOma,
-    },
-    {
       name: "Cifrut",
       image: imageCifrut,
     },
     {
       name: "Corona",
       image: imageCorona,
-    },
-    {
-      name: "Cafe Quindio",
-      image: imageCafeQuindio,
     },
     {
       name: "Naty Pastel",

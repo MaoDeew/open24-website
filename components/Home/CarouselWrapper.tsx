@@ -45,7 +45,7 @@ export const CarouselWrapper = () => {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       {carouselImages.map(({alt,width,height,src})=>{
         return(
-          <Carousel.Item interval={6000}>
+          <Carousel.Item key={alt+src} interval={6000}>
           <Image
             src={src}
             className="d-block w-100"

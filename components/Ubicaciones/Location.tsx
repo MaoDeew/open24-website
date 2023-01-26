@@ -40,10 +40,10 @@ const [modalShow, setModalShow] = useState(false);
             />
           </div>
           <div className="md:ml-3">
-            <p style={{ fontWeight: "bold" }}>
+            {/*<p style={{ fontWeight: "bold" }}>
               <span style={{ fontWeight: "normal" }}>Horario: </span>Abierto
               24 horas
-            </p>
+            </p>*/}
             <Button variant="danger" className="w-52" onClick={() => setModalShow(true)}>
               Abrir Ubicación
             </Button>

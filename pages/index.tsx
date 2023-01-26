@@ -28,10 +28,11 @@ const Home: NextPage = ({deviceType}: any) => {
       </Script>
       <Head>
       </Head>
-        <Header title="Somos tiendas automáticas en Bogotá, abiertas todos los días 24 horas" deviceType={deviceType}/>
+        <Header title="Somos tiendas automáticas abiertas 24 horas" deviceType={deviceType}/>
         <div className="py-5">
           
         <CarouselWrapper />
+        
         </div>
         <Brands deviceType={deviceType} />
         <div style={{marginTop: 2}}>

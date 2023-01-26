@@ -42,7 +42,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
             style={{
               marginBottom: 0,
               fontWeight: "bold",
-              fontSize: isMobile ? 16.5 : 40,
+              fontSize: isMobile ? 18 : 30,
             }}
             className="md:flex text-sm md:text-xl md:py-5"
           >
@@ -108,6 +108,17 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
                   style={{ fontWeight: "bold" }}
                 >
                   Nuestras Tiendas
+                </span>
+              </li>
+              <li>
+                <span
+                  onClick={() => window.location.replace("/#proveedores")}
+                  className={
+                    "block py-2 pr-4 pl-3 text-xl cursor-pointer text-red-500"
+                  }
+                  style={{ fontWeight: "bold" }}
+                >
+                  Proveedores
                 </span>
               </li>
             </ul>

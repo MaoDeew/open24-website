@@ -9,9 +9,12 @@ import image1 from "../../assets/image1.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
+import image5 from "../../assets/image5.png";
+
 
 export const CarouselWrapper = () => {
   const [index, setIndex] = useState(0);
+
 
   const handleSelect = (selectedIndex: number, e: any) => {
     setIndex(selectedIndex);
@@ -39,10 +42,26 @@ export const CarouselWrapper = () => {
     width : "1920px",
     height : "1080px",
     src : image4
+  },
+  {
+    alt : 'Fifth slide',
+    width : "1920px",
+    height : "1080px",
+    src : image5
   }]
+
+  const carouselItemVideo = () =>{
+    return(<Carousel.Item interval={35000}>
+      <video id='video' width={1920} height={1080} autoPlay muted loop>
+          <source src='juanValdezVideo.webm' type="video/webm" />
+        </video>
+    </Carousel.Item>)
+  }
+
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
+       {carouselItemVideo()}
       {carouselImages.map(({alt,width,height,src})=>{
         return(
           <Carousel.Item key={alt+src} interval={6000}>
@@ -55,7 +74,7 @@ export const CarouselWrapper = () => {
           />
         </Carousel.Item>
         )
-      })}
+      })} 
     </Carousel>
   );
 };

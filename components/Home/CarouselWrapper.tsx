@@ -48,6 +48,12 @@ export const CarouselWrapper = () => {
     width : "1920px",
     height : "1080px",
     src : image5
+  },
+  {
+    alt : 'Sixth slide',
+    width : "1920px",
+    height : "1080px",
+    src : image1
   }]
 
   const carouselItemVideo = () =>{

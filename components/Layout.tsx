@@ -33,7 +33,7 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
       <div className="flex flex-col" style={{}}>
         <NavBar
           title="Open 24"
-          subtitle="Café, Snacks, Bebidas y mucho más..."
+          subtitle='CAFÉ, SNACKS, BEBIDAS ...'
           deviceType={deviceType}
         />
         <div>

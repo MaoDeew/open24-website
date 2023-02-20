@@ -42,7 +42,7 @@ export const NavBar = ({ title, subtitle, deviceType }: NavBarProps) => {
             style={{
               marginBottom: 0,
               fontWeight: "bold",
-              fontSize: isMobile ? 18 : 30,
+              fontSize: isMobile ? 25 : 30,
             }}
             className="md:flex text-sm md:text-xl md:py-5"
           >

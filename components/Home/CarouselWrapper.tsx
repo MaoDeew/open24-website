@@ -20,12 +20,12 @@ export const CarouselWrapper = () => {
     setIndex(selectedIndex);
   };
 
-  const carouselImages = [{
+  const carouselImages = [/*{
     alt : 'First slide',
     width : "1920px",
     height : "1080px",
     src : image1
-  },{
+  },*/{
     alt : 'Second slide',
     width : "1920px",
     height : "1080px",
@@ -49,12 +49,12 @@ export const CarouselWrapper = () => {
     height : "1080px",
     src : image5
   },
-  {
+  /*{
     alt : 'Sixth slide',
     width : "1920px",
     height : "1080px",
     src : image1
-  }]
+  }*/]
 
   const carouselItemVideo = () =>{
     return(<Carousel.Item interval={35000}>

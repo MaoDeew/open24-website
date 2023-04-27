@@ -67,7 +67,7 @@ export const CarouselWrapper = () => {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-       {carouselItemVideo()}
+       {/*carouselItemVideo()*/}
       {carouselImages.map(({alt,width,height,src})=>{
         return(
           <Carousel.Item key={alt+src} interval={6000}>

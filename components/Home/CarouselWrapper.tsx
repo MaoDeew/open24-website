@@ -10,6 +10,8 @@ import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 import image5 from "../../assets/image5.png";
+import image6 from "../../assets/image6.png";
+import image7 from "../../assets/image7.png";
 
 
 export const CarouselWrapper = () => {
@@ -49,12 +51,18 @@ export const CarouselWrapper = () => {
     height : "1080px",
     src : image5
   },
-  /*{
+  {
     alt : 'Sixth slide',
     width : "1920px",
     height : "1080px",
-    src : image1
-  }*/]
+    src : image6
+  },
+  {
+    alt : 'Seventh slide',
+    width : "1920px",
+    height : "1080px",
+    src : image7
+  }]
 
   const carouselItemVideo = () =>{
     return(<Carousel.Item interval={35000}>

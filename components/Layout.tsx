@@ -14,6 +14,7 @@ import {
   faTwitter,
   faInstagram,
   faWhatsapp,
+  faWhatsappSquare,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
@@ -36,6 +37,13 @@ export const Layout = ({ children, deviceType }: AuxProps) => {
           subtitle='CAFÉ, SNACKS, BEBIDAS ...'
           deviceType={deviceType}
         />
+        <a
+                      href="https://api.whatsapp.com/send/?phone=573102503692&text&app_absent=0"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mr-4 no-underline text-white text-3xl hover:underline md:mr-6 "
+                    ><FontAwesomeIcon bounce icon={faWhatsappSquare}  color={'green'} size='2x' style={{zIndex: 1 ,position: 'fixed', left: isMobile ? '85%' : '91%', top: '85%'}}/></a>
+        
         <div>
           <div className="bg-gray-100 p-10">
             <div className="container mx-auto h-full">{children}</div>

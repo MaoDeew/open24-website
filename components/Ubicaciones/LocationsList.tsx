@@ -9,7 +9,7 @@ import imageLocation4 from "../../assets/ubicaciones/EDS Petromil Bazar - 65.jpe
 import imageLocation5 from "../../assets/ubicaciones/EDS Petromil Bazar -134.jpeg";
 import imageLocation6 from "../../assets/ubicaciones/EDS Terpel Bazar -151.jpeg";
 
-export default function LocationsList() {
+export default function LocationsList({deviceType}: any) {
   const locations = [
     {
       name: "EDS PETROBRAS Centro Comercial El Manantial",
@@ -59,6 +59,7 @@ export default function LocationsList() {
     <div className="flex flex-col justify-between">
       {locations.map(({ name, image, address, locationWazeURL,locationGoogleMapsURL },index) => (
         <Location
+          deviceType={deviceType}
           key={name+" - "+address+" - "+index}
           title={name}
           address={address}

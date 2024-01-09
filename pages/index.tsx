@@ -41,7 +41,7 @@ const Home: NextPage = ({deviceType}: any) => {
             NUESTRAS TIENDAS
           </span>
         </div>
-        <LocationsList />
+        <LocationsList deviceType={deviceType}/>
         
       </div>
       </div>

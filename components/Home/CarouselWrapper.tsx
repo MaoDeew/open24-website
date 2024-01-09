@@ -16,6 +16,8 @@ import image8 from "../../assets/image8.png";
 import image9 from "../../assets/image9.png";
 import image10 from "../../assets/image10.png";
 import image11 from "../../assets/image11.png";
+import image12 from "../../assets/image12.png";
+import image13 from "../../assets/image13.png";
 
 
 export const CarouselWrapper = () => {
@@ -90,6 +92,18 @@ export const CarouselWrapper = () => {
     width : "1920px",
     height : "1080px",
     src : image11
+  },
+  {
+    alt : 'Twelveth slide',
+    width : "1920px",
+    height : "1080px",
+    src : image12
+  },
+  {
+    alt : 'Thirteenth slide',
+    width : "1920px",
+    height : "1080px",
+    src : image13
   }]
 
   const carouselItemVideo = () =>{

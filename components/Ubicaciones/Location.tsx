@@ -9,6 +9,7 @@ interface LocationProps {
   image: any;
   locationWazeURL: string;
   locationGoogleMapsURL : string;
+  deviceType: string;
 }
 
 export default function Location({
@@ -16,11 +17,14 @@ export default function Location({
   address,
   image,
   locationWazeURL,
-  locationGoogleMapsURL
+  locationGoogleMapsURL,
+  deviceType
 }: LocationProps) {
 
 
 const [modalShow, setModalShow] = useState(false);
+
+const isMobile = deviceType === "mobile";
 
   return (
     <Card style={{ marginBottom: 30 }}>
@@ -29,21 +33,17 @@ const [modalShow, setModalShow] = useState(false);
         <Card.Title style={{fontWeight: 'bold', fontSize: 16}} className='flex flex-col'>
           {address}
         </Card.Title>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col">
           <div>
             <Image
               src={image}
               className="d-block w-100"
               alt="First slide"
-              width="480px"
-              height="270px"
+              width={isMobile ? "480px" : "1100px"}  
+              height={isMobile ? "270px" : "500px"}
             />
           </div>
-          <div className="md:ml-3">
-            {/*<p style={{ fontWeight: "bold" }}>
-              <span style={{ fontWeight: "normal" }}>Horario: </span>Abierto
-              24 horas
-            </p>*/}
+          <div /*className="md:ml-3"*/>
             <Button variant="danger" className="w-52" onClick={() => setModalShow(true)}>
               Abrir Ubicación
             </Button>

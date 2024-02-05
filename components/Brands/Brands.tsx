@@ -18,6 +18,8 @@ import imagePepsico from "../../assets/brands/pepsico.png";
 import imageHindu from "../../assets/brands/hindu.png";
 import imageNestle from "../../assets/brands/nestle.png";
 import imageMayaguez from "../../assets/brands/mayaguez.png";
+import imageCafesDeLaRobada from "../../assets/brands/cafesDeLaRobada.jpeg"
+
 import { useWindowSize } from "../../hooks/useWindowSize";
 
 interface BrandsProps {
@@ -27,6 +29,10 @@ interface BrandsProps {
 
 export const Brands = ({ additionalClassName, deviceType }: BrandsProps) => {
   const listBrands = [
+    {
+      name : 'Cafés de la Robada',
+      image: imageCafesDeLaRobada
+    },
     {
       name: "Colombina",
       image: imageColombina,
